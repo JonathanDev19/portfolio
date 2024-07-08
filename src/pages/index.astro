@@ -2,17 +2,19 @@
 import Experience from "../components/Experience.astro";
 import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
+import Proyectos from "../components/Proyectos.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Jonathan Perez">
   <main
-    class="absolute top-0 z-[-2] min-h-full w-[100%] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] dark:bg-white dark:bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] dark:bg-[size:14px_24px]"
+    class="absolute top-0 z-[-2] min-h-full w-[100%] dark:bg-white dark:bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] dark:bg-[size:14px_24px]"
   >
     <header class="min-h-[100vh]">
       <Navbar />
       <Hero />
     </header>
     <Experience />
+    <Proyectos />
   </main>
 </Layout>

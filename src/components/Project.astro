@@ -1,0 +1,32 @@
+---
+import Click from "../icons/Click.astro";
+
+
+---
+
+<style>
+  .blur-background {
+    backdrop-filter: blur(10px); /* Ajusta el valor de desenfoque según tu preferencia */
+  }
+</style>
+
+<section class=" max-w-[80%] md:w-[90%] md:max-w-[1000px] mx-auto py-11  md:mb-0">
+  <div class="relative flex flex-col md:flex-row items-center">
+    <div class="flex flex-col justify-around">
+      <div class="text-center md:text-left">
+        <p class="text-fuchsia-700 font-extrabold">Featured Project</p>
+        <h3 class="text-2xl text-white">Example Project</h3>
+      </div>
+      <div class="bg-slate-600 bg-opacity-10 p-6 mt-6 rounded z-10 lg:w-[65%] blur-background">
+        <p class="text-slate-300 z-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero sint repellat tempore expedita earum eaque quidem in? Provident tempore nostrum maxime amet veritatis nemo quasi pariatur, nesciunt nobis nisi.</p>
+      </div>
+      <div class="flex mt-6 gap-x-3 pb-5 mx-auto md:mx-0">
+        <Click />
+        <Click />
+      </div>
+    </div>
+    <div class="relative lg:absolute right-0 top-0 lg:bg-fuchsia-950 lg:pl-7 lg:pt-7 rounded-md">
+      <img class="mx-auto max-w-[40vh] md:max-w-[360px] lg:max-w-96 " src="../../public/images/Mask group.jpg" alt="">
+    </div>
+  </div>
+</section>
